@@ -4,12 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enermy
+  - InteractableObject
+  - Lattice
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - InteractableObject
   - Water
   - UI
   - 
