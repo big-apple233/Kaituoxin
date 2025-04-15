@@ -11,7 +11,11 @@ public class UIManager : MonoBehaviour
     }
     public void HideDirectoryUI()
     { 
-        directoryUI?.SetActive(false);
+        directoryUI.SetActive(false);
     }
 
+    public void ShowAndHideDirectoryUI()
+    {
+        directoryUI.SetActive(!directoryUI.activeSelf);
+    }
 }
