@@ -6,53 +6,63 @@ using UnityEngine.EventSystems;
 public class InputManager : MonoBehaviour
 {
     [SerializeField] private PlayerAnimationControl playerAnimationControl;
+    [SerializeField] UIManager uiManager;
+    [SerializeField] private DialogUI dialogUI;
     private Vector2 dir;
     private RaycastHit2D hit;
     private void Update()
     {
+
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
         if (Input.GetMouseButtonDown(0))
         {
-            hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            Debug.Log("按下鼠标左键");
-            if (hit.collider == null)
-            {
-                Debug.LogWarning("没有检测到物体");
-                return;
-            }
-            if (!EventSystem.current.IsPointerOverGameObject())
-            {
-                if (hit.transform.CompareTag("InteractableObject"))
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = 10;
+            Vector3 screenPos = Camera.main.ScreenToWorldPoint(mousePos);
+            RaycastHit2D hit = Physics2D.Raycast(screenPos, Vector2.zero);
+
+            if(hit)
+                if (hit.collider.CompareTag("InteractableObject"))
                 {
-                    Debug.Log("检测到可互动物体");
-                    ClickDialog();
+                    if(dialogUI.isDialog)
+                        return;
+                    print(hit.collider.name);
+                    dialogUI.SetText(hit.collider.GetComponent<InteractableObject>().GetText());
+                    dialogUI.Show();
+                    return;
                 }
-            }
-           
-            
         }
-        dir.x = Input.GetAxis("Horizontal");
-        dir.y = Input.GetAxis("Vertical");
+        if (Input.GetKeyDown(KeyCode.M))
+        { 
+            uiManager.ShowAndHideDirectoryUI();
+        }
+        UpdateDir();
         UpdatePlayerAnimation(dir);
     }
-    public void ClickDialog()
-    {       
-        InteractableObject interactableObject = hit.transform.GetComponent<InteractableObject>();
-        DialogUI.Instance.SetText(interactableObject.GetText());
-        DialogUI.Instance.Show();
-    }
-    public void UpdatePlayerAnimation(Vector2 dir)
+    private void UpdateDir()
     {
+        dir.x = Input.GetAxis("Horizontal");
+        dir.y = Input.GetAxis("Vertical");
+        
+    }
+    private void UpdatePlayerAnimation(Vector2 dir)
+    {
+        
+       
+        if (Input.GetMouseButtonDown(0))
+        { 
+            playerAnimationControl.SetParameter("isAttack");
+        }
         if (dir == Vector2.zero)
         {
             playerAnimationControl.SetParameter("isWalk", false);
             return;
         }
-            
-        playerAnimationControl.SetParameter("x", dir.x);   
+        playerAnimationControl.SetParameter("x", dir.x);
         playerAnimationControl.SetParameter("y", dir.y);
-      
         playerAnimationControl.SetParameter("isWalk", true);
- 
+        
         
     }
     

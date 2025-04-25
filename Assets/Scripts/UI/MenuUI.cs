@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -11,14 +12,37 @@ public class MenuUI : MonoBehaviour
     [SerializeField] private Image backGround;
     [SerializeField] private Button startButton;
     [SerializeField] private Button quitButton;
+    [SerializeField] private Bus bus;
+    private bool isChangeScene = false;
+    private bool isBusFront = false;
     private void Awake()
     {
-        startButton.onClick.AddListener(ChangeUI);
+        //startButton.onClick.AddListener(ChangeUI);
+        startButton.onClick.AddListener(BusMove);
         quitButton.onClick.AddListener(QuitButton);
+    }
+
+    private void BusMove()
+    {
+        if (isBusFront == false)
+            StartCoroutine(BusFront());
+    }
+    private IEnumerator BusFront()
+    {
+        bus.StartBusMove(1000);
+        yield return new WaitForSeconds(2);
+        bus.StartBusMove(2500);
+        yield return new WaitForSeconds(3);
+        ChangeUI();
     }
     public void StartButton()
     {
-        SceneManager.LoadScene(1);
+        bus.StartBusMove(-2500);
+        if (isChangeScene == false)
+        {
+            isChangeScene = true;
+            StartCoroutine(ChangeScene());
+        }
     }
     public void QuitButton()
     { 
@@ -32,4 +56,10 @@ public class MenuUI : MonoBehaviour
         startButton.onClick.AddListener(StartButton);
        
     }
+    private IEnumerator ChangeScene()
+    { 
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(1);
+    }
+
 }

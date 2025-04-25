@@ -6,43 +6,45 @@ using UnityEngine.UI;
 
 public class DialogUI : MonoBehaviour
 {
-    public static DialogUI Instance { get; private set; }
     [SerializeField] private GameObject parent;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text contexlText;
     [SerializeField] private float time = 0.5f;
-    private bool isDialog = false;
+    public bool isDialog = false;
     private string[] dialogs;
     private int index;
-    private void Awake()
+    private void Start()
     {
-        Instance = this;
+        parent.SetActive(false);
+        index = 0;
+        isDialog = false;
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && parent.activeSelf == true && isDialog == false)
-            UpdateDialog(index);
+        
     }
 
-    public void UpdateDialog(int index)
+    public void UpdateDialog()
     {
+        if (!(parent.activeSelf == true && isDialog == false))
+            return;
         if (index == dialogs.Length)
         {
             Hide();
             return;
         }
-        string[] dialog = dialogs[index].Split(',');
-        nameText.text = dialog[0];
+        string[] dialog = dialogs[index].Split('£º');
+        nameText.text = dialog[0]+':';
         contexlText.text = null;
         StartCoroutine(Printer(dialog[1]));
-        this.index++;
+        index++;
     }
 
     public void Show()
     { 
         index = 1;
         parent.SetActive(true);
-        UpdateDialog(index);
+        UpdateDialog();
     }
     public void Hide()
     { 

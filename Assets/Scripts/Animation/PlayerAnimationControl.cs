@@ -17,4 +17,8 @@ public class PlayerAnimationControl : MonoBehaviour
     { 
         animator.SetBool(parameterName, value);
     }
+    public void SetParameter(string parameterName)
+    { 
+        animator.SetTrigger(parameterName);
+    }
 }
