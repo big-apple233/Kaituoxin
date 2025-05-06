@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class BackPackUI : MonoBehaviour
 {
-    public static BackPackUI Instance { get; private set; }
+    
     [SerializeField] private GameObject parent;
     [SerializeField] private List<Lattice> lattices = new List<Lattice>();
     [SerializeField] private Lattice targetLattice;
-    public ObjectSO objectSO;
+    public NameTextureSO objectSO;
     private void Awake()
     {
-        Instance = this;
+        
     }
     private void Start()
     {
-        targetLattice.gameObject.SetActive(false);
-        lattices[0].AddObject(objectSO);
+        //targetLattice.gameObject.SetActive(false);
+        //lattices[0].AddObject(objectSO);
     }
     private void Update()
     {
@@ -62,7 +62,7 @@ public class BackPackUI : MonoBehaviour
             }
             else
             { 
-                ObjectSO objectSO = lattice.GetObjectSO();
+                NameTextureSO objectSO = lattice.GetObjectSO();
                 lattice.AddObject(targetLattice.GetObjectSO());
                 targetLattice.AddObject(objectSO);
             }

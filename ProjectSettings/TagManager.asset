@@ -13,8 +13,8 @@ TagManager:
   - InteractableObject
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
@@ -51,4 +51,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1893508913
+    locked: 0
+  - name: UpPlayer
+    uniqueID: 1381986437
+    locked: 0
+  - name: Prop
+    uniqueID: 2466891833
     locked: 0

@@ -6,13 +6,17 @@ using UnityEngine.UI;
 public class Lattice : MonoBehaviour
 {
     [SerializeField] private Image image;
-    [SerializeField] private ObjectSO objectSO;
+    [SerializeField] private NameTextureSO objectSO;
     [SerializeField] private int count;
     private void Start()
     {
-        image.gameObject.SetActive(false);
+        //image.gameObject.SetActive(false);
+        if(objectSO != null)
+            image.sprite = objectSO.sprite;
+        else
+            image.sprite = null;
     }
-    public void AddObject(ObjectSO objectSO)
+    public void AddObject(NameTextureSO objectSO)
     { 
         
         this.objectSO = objectSO;
@@ -40,7 +44,7 @@ public class Lattice : MonoBehaviour
         if(count > 0)
             count--;
     }
-    public ObjectSO GetObjectSO()
+    public NameTextureSO GetObjectSO()
     { 
         return objectSO;
     }

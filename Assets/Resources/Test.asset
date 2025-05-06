@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   objectName: test
-  maxCount: 0
   sprite: {fileID: 21300000, guid: b06a46ff97852e34b82fbc0695b1f25e, type: 3}
