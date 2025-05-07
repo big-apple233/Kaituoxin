@@ -8,11 +8,14 @@ using UnityEngine.UI;
 
 public class MenuUI : MonoBehaviour
 {
-    [SerializeField] private TMP_Text tmp;
+    //[SerializeField] private TMP_Text tmp;
+    [SerializeField] private GameObject twoPerson;
     [SerializeField] private Image backGround;
     [SerializeField] private Button startButton;
     [SerializeField] private Button quitButton;
     [SerializeField] private Bus bus;
+    [SerializeField] private Image tittle;
+    [SerializeField] private Sprite sprite;
     private bool isChangeScene = false;
     private bool isBusFront = false;
     private void Awake()
@@ -31,6 +34,7 @@ public class MenuUI : MonoBehaviour
     {
         bus.StartBusMove(1000);
         yield return new WaitForSeconds(2);
+        twoPerson.SetActive(false);
         bus.StartBusMove(2500);
         yield return new WaitForSeconds(3);
         ChangeUI();
@@ -51,10 +55,13 @@ public class MenuUI : MonoBehaviour
     public void ChangeUI()
     { 
         startButton.onClick.RemoveAllListeners();
-        tmp.text = "11010路公交";
-        backGround.sprite = Resources.Load<Sprite>("Texture/StartMenu/BackGround");
+        //tmp.text = "11010路公交";
+        backGround.GetComponent<Animator>().SetBool("isRealStart", true);
+        tittle.sprite = sprite;
         startButton.onClick.AddListener(StartButton);
-       
+        startButton.GetComponentInChildren<TMP_Text>().color= new Color(1.0f * 185 / 255, 1.0f * 105 / 255, 1.0f * 138 / 255, 1);
+        quitButton.GetComponentInChildren<TMP_Text>().color = new Color(1.0f * 185 / 255, 1.0f * 105 / 255, 1.0f * 138 / 255, 1);
+
     }
     private IEnumerator ChangeScene()
     { 
