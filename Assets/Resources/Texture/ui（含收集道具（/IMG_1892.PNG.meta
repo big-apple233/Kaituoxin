@@ -101,9 +101,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 191
-        width: 97
-        height: 97
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: IMG_1892_6
       rect:
         serializedVersion: 2
-        x: 388
-        y: 196
-        width: 88
-        height: 88
+        x: 384
+        y: 193
+        width: 97
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +142,10 @@ TextureImporter:
       name: IMG_1892_7
       rect:
         serializedVersion: 2
-        x: 676
+        x: 672
         y: 192
-        width: 88
-        height: 92
+        width: 92
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: IMG_1892_8
       rect:
         serializedVersion: 2
-        x: 108
-        y: 196
-        width: 76
-        height: 84
+        x: 96
+        y: 192
+        width: 91
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: IMG_1892_12
       rect:
         serializedVersion: 2
-        x: 596
-        y: 196
-        width: 56
-        height: 84
+        x: 579
+        y: 193
+        width: 92
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: IMG_1892_16
       rect:
         serializedVersion: 2
-        x: 488
-        y: 196
-        width: 84
-        height: 72
+        x: 483
+        y: 193
+        width: 95
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,34 +223,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1892_20
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 192
-        width: 104
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30748fa9d1e74a147b1ada50b8f877db
-      internalID: -1645813238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: IMG_1892_21
       rect:
         serializedVersion: 2
-        x: 299
-        y: 192
-        width: 77
-        height: 96
+        x: 291
+        y: 193
+        width: 93
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,13 +244,34 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: IMG_1892_23
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 192
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce4a757cc90ea440ac18b7e7acda034
+      internalID: -1976801440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: IMG_1892_25
       rect:
         serializedVersion: 2
-        x: 16
-        y: 104
-        width: 64
-        height: 80
+        x: 1
+        y: 97
+        width: 94
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,34 +286,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1892_26
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 176
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8bc8ddae0e00ed41bae1e7c08c3add8
-      internalID: 1147947081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: IMG_1892_27
       rect:
         serializedVersion: 2
-        x: 200
-        y: 96
-        width: 76
-        height: 96
+        x: 188
+        y: 97
+        width: 100
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +310,10 @@ TextureImporter:
       name: IMG_1892_29
       rect:
         serializedVersion: 2
-        x: 392
-        y: 104
-        width: 72
-        height: 84
+        x: 385
+        y: 96
+        width: 97
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +331,10 @@ TextureImporter:
       name: IMG_1892_30
       rect:
         serializedVersion: 2
-        x: 500
-        y: 104
-        width: 64
-        height: 80
+        x: 483
+        y: 96
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +352,10 @@ TextureImporter:
       name: IMG_1892_31
       rect:
         serializedVersion: 2
-        x: 100
-        y: 100
-        width: 88
-        height: 68
+        x: 97
+        y: 98
+        width: 91
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,9 +374,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 132
+        y: 96
         width: 96
-        height: 20
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +394,10 @@ TextureImporter:
       name: IMG_1892_34
       rect:
         serializedVersion: 2
-        x: 588
-        y: 112
-        width: 72
-        height: 60
+        x: 580
+        y: 97
+        width: 90
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,34 +412,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1892_35
-      rect:
-        serializedVersion: 2
-        x: 676
-        y: 148
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e62a05bc906cecd41960306a93dda4b0
-      internalID: 1518443555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: IMG_1892_36
       rect:
         serializedVersion: 2
-        x: 672
-        y: 116
-        width: 92
-        height: 49
+        x: 671
+        y: 98
+        width: 93
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -475,76 +433,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1892_37
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 136
-        width: 8
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11558ceda3187284eb8c978eaad17796
-      internalID: 1190699371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_1892_38
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 128
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d988a4d09fb640e4a8e7ab40e227e7c3
-      internalID: 2047100332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_1892_39
-      rect:
-        serializedVersion: 2
-        x: 676
-        y: 124
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f6778db370649a41bad9d2d5388f17d
-      internalID: 389085460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: IMG_1892_42
       rect:
         serializedVersion: 2
-        x: 12
-        y: 4
-        width: 72
-        height: 88
+        x: 2
+        y: 2
+        width: 93
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,9 +457,9 @@ TextureImporter:
       name: IMG_1892_43
       rect:
         serializedVersion: 2
-        x: 128
+        x: 97
         y: 4
-        width: 24
+        width: 91
         height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -583,10 +478,10 @@ TextureImporter:
       name: IMG_1892_44
       rect:
         serializedVersion: 2
-        x: 204
+        x: 189
         y: 8
-        width: 76
-        height: 80
+        width: 98
+        height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,10 +499,10 @@ TextureImporter:
       name: IMG_1892_45
       rect:
         serializedVersion: 2
-        x: 300
-        y: 1
-        width: 73
-        height: 87
+        x: 288
+        y: 7
+        width: 96
+        height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,10 +520,10 @@ TextureImporter:
       name: IMG_1892_46
       rect:
         serializedVersion: 2
-        x: 388
+        x: 385
         y: 8
-        width: 88
-        height: 72
+        width: 97
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,10 +541,10 @@ TextureImporter:
       name: IMG_1892_47
       rect:
         serializedVersion: 2
-        x: 504
-        y: 10
-        width: 50
-        height: 74
+        x: 483
+        y: 9
+        width: 96
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
