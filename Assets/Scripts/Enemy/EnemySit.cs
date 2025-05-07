@@ -26,7 +26,7 @@ public class EnemySit : MonoBehaviour
                 {
                 print(collision.gameObject.name + "»Øµ½×ùÎ»");
 
-                   // collision.GetComponent<AnimationControl>().SetParameter("isSet", true);
+                    
                     collision.GetComponent<AnimationControl>().SetParameter("isWalk", false);
                     collision.GetComponent<Person_character>().isMonster = false;
                     ec.enabled = false;
