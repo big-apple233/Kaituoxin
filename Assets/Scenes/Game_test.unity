@@ -52799,6 +52799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1414913664}
+  - component: {fileID: 1414913665}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -52824,6 +52825,32 @@ Transform:
   - {fileID: 1503299413}
   m_Father: {fileID: 561223413}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1414913665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414913663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa9feb8098031846ab00154cc46952a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chapterIndex: 0
+  npcIndex: 0
+  chapter1:
+  - {fileID: 753928951}
+  - {fileID: 589552273}
+  - {fileID: 1811448444}
+  chapter2:
+  - {fileID: 310493331}
+  - {fileID: 1397249082}
+  - {fileID: 782038080}
+  chapter3:
+  - {fileID: 418401803}
+  - {fileID: 2037548877}
+  - {fileID: 1325610063}
 --- !u!1 &1417804692
 GameObject:
   m_ObjectHideFlags: 0
