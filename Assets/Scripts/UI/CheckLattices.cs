@@ -7,6 +7,8 @@ public class CheckLattices : MonoBehaviour
     public List<Lattice> lattices;
     private void Update()
     {
+        if (ChapterControl.instance.chapterIndex == 4)
+            return;
         if (lattices[0].GetObjectSO().name == "A1" && lattices[1].GetObjectSO().name == "A2" && lattices[2].GetObjectSO().name == "A3")
         {
             foreach (var lattice in lattices)

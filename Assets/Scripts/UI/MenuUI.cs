@@ -16,6 +16,8 @@ public class MenuUI : MonoBehaviour
     [SerializeField] private Bus bus;
     [SerializeField] private Image tittle;
     [SerializeField] private Sprite sprite;
+    [SerializeField] private AudioSource audio;
+    [SerializeField] private AudioClip clip;
     private bool isChangeScene = false;
     private bool isBusFront = false;
     private void Awake()
@@ -38,6 +40,7 @@ public class MenuUI : MonoBehaviour
         bus.StartBusMove(3000);
         yield return new WaitForSeconds(4.5f);
         ChangeUI();
+        audio.clip = clip;
     }
     public void StartButton()
     {

@@ -5774,7 +5774,7 @@ MonoBehaviour:
   back_manager: {fileID: 974843861}
   fanshu: {fileID: 1367789827}
   len: 0
-  id: 0
+  id: 1
 --- !u!82 &1367789827
 AudioSource:
   m_ObjectHideFlags: 0

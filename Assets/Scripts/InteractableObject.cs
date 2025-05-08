@@ -25,7 +25,8 @@ public class InteractableObject : MonoBehaviour
     {
         if(ID != null)
             Lock_manager.instance.Unlock(isCharacter, ID.index, ID.objectId);
-        
+        if (!isCharacter)
+            Destroy(gameObject);
         return nowText;
     }
 

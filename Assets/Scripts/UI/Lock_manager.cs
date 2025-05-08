@@ -25,6 +25,8 @@ public class Lock_manager : MonoBehaviour
 
                 if (obj.chara_id == id && obj.conmu_id == num)
                 {
+                    if (obj.gameObject.activeSelf == true)
+                        continue;
                     obj.gameObject.SetActive(!obj.gameObject.activeSelf);
                     
                 }
