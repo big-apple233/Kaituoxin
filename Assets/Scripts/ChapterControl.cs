@@ -77,7 +77,7 @@ public class ChapterControl : MonoBehaviour
         if (chapterIndex == 1)
         {
             chapter1Person[0].SetActive(true);
-            for(int i = 0; i < 10; i++)
+            for(int i = 0; i < 9; i++)
             {
                 BackPackUI.instance.lattices[i].AddObject(chpater1SO[i]);
 
