@@ -32,16 +32,16 @@ public class MenuUI : MonoBehaviour
     }
     private IEnumerator BusFront()
     {
-        bus.StartBusMove(1000);
-        yield return new WaitForSeconds(2);
+        bus.StartBusMove(1500);
+        yield return new WaitForSeconds(3.5f);
         twoPerson.SetActive(false);
-        bus.StartBusMove(2500);
-        yield return new WaitForSeconds(3);
+        bus.StartBusMove(3000);
+        yield return new WaitForSeconds(4.5f);
         ChangeUI();
     }
     public void StartButton()
     {
-        bus.StartBusMove(-2500);
+        bus.StartBusMove(-3000);
         if (isChangeScene == false)
         {
             isChangeScene = true;

@@ -28,7 +28,8 @@ public class EnemyControl : MonoBehaviour
     {
         UpdateDir();
         UpdateEnemyAnimation();
-        
+        if (enemyCharacter.isSit)
+            return;
         if (enemyCharacter.IsMonster() == false)
             return;
         else
