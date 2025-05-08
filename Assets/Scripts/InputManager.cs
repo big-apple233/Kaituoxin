@@ -71,8 +71,6 @@ public class InputManager : MonoBehaviour
                 print(hit.collider.name);
                 dialogUI.SetText(hit.collider.GetComponent<InteractableObject>());
                 dialogUI.Show();
-                
-                
             }
 
     }

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - InteractableObject
   - Lattice
+  - ok
+  - no
+  - pub
   layers:
   - Default
   - TransparentFX
