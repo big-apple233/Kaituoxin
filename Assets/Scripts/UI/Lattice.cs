@@ -17,8 +17,9 @@ public class Lattice : MonoBehaviour
             image.sprite = null;
     }
     public void AddObject(NameTextureSO objectSO)
-    { 
-        
+    {
+
+        print("11");
         this.objectSO = objectSO;
         image.gameObject.SetActive(true);
         image.sprite = objectSO.sprite;

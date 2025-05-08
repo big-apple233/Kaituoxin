@@ -9,7 +9,8 @@ public class ChatBubble : MonoBehaviour
     [SerializeField] private InteractableObject interactableObject;
     private void Update()
     {
-        SetText(interactableObject.GetText().text.Split('\n')[0].Split(' ')[1]);
+        if(interactableObject != null)
+            SetText(interactableObject.GetText().text.Split('\n')[0].Split(' ')[1]); 
     }
     public void SetText(string str)
     { 

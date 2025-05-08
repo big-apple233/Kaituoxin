@@ -28,6 +28,7 @@ public class EnemyControl : MonoBehaviour
     {
         UpdateDir();
         UpdateEnemyAnimation();
+        
         if (enemyCharacter.IsMonster() == false)
             return;
         else
@@ -57,7 +58,7 @@ public class EnemyControl : MonoBehaviour
     { 
         enemyMove.enabled=false;
         yield return new WaitForSeconds(dieCd);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
     private void Attack()
     {

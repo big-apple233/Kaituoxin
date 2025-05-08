@@ -7,11 +7,16 @@ public class ChatBubbleFollow : MonoBehaviour
     public float xOffset;
     public float yOffset = 145f;
     public RectTransform recTransform;
-
-    private void OnDestroy()
+    private void OnDisable()
     {
         recTransform.gameObject.SetActive(false);
     }
+    private void OnEnable()
+    {
+        recTransform.gameObject.SetActive(true);
+        
+    }
+
     void Update()
     {
         Vector2 player2DPosition = Camera.main.WorldToScreenPoint(transform.position);

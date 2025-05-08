@@ -6,13 +6,14 @@ public class InteractableObject : MonoBehaviour
 {
     [SerializeField] private TextAsset[] texts;
     [SerializeField] public TextAsset affectedText;
-    [SerializeField] private Id_det id_det;
+    [SerializeField] private id ID;
     [SerializeField] private bool isCharacter;
     public TextAsset nowText;
     private int index;
     private void Awake()
     {
-        id_det = GetComponent<Id_det>();
+        if(GetComponent<id>() != null)
+            ID = GetComponent<id>();
     }
     private void Start()
     {
@@ -21,7 +22,10 @@ public class InteractableObject : MonoBehaviour
         //Lock_manager.instance.Unlock(isCharacter, id_det.chara_id, id_det.conmu_id);
     }
     public TextAsset GetText()
-    { 
+    {
+        if(ID != null)
+            Lock_manager.instance.Unlock(isCharacter, ID.index, ID.objectId);
+        
         return nowText;
     }
 
@@ -30,8 +34,8 @@ public class InteractableObject : MonoBehaviour
         if (index + 1 < texts.Length)
         { 
             nowText = texts[++index];
-            id_det.chara_id++;
-            Lock_manager.instance.Unlock(isCharacter, id_det.chara_id, id_det.conmu_id);
+            ID.objectId++;
+            
         }
         
     }

@@ -24,11 +24,18 @@ public class EnemySit : MonoBehaviour
             {
                 if (ec.GetId() == this.id)
                 {
-                print(collision.gameObject.name + "回到座位");
+                    
+                    print(collision.gameObject.name + "回到座位");
 
                     
                     collision.GetComponent<AnimationControl>().SetParameter("isWalk", false);
                     collision.GetComponent<Person_character>().isMonster = false;
+                    collision.GetComponent<Person_character>().isSit = true;
+                    var ID = collision.GetComponent<id>();
+                    Lock_manager.instance.Unlock(true, 4, ID.objectId);
+                    Lock_manager.instance.Unlock(true, 5, ID.objectId);
+                    Lock_manager.instance.Unlock(true, 6, ID.objectId);
+
                     ec.enabled = false;
                 }
             }

@@ -8,6 +8,7 @@ public class Person_character : MonoBehaviour
     private bool isDead;
     private bool isAffected;
     public bool isMonster;
+    public bool isSit;
     public void Ondamage(int damage,GameObject souce,float distance)
     {
         if (HP <= 0)

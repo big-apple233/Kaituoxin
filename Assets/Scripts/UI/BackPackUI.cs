@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class BackPackUI : MonoBehaviour
 {
-    
+
+    public static BackPackUI instance;
     [SerializeField] private GameObject parent;
-    [SerializeField] private List<Lattice> lattices = new List<Lattice>();
+    [SerializeField] public List<Lattice> lattices = new List<Lattice>();
     [SerializeField] private Lattice targetLattice;
-    public NameTextureSO objectSO;
+    //public NameTextureSO objectSO;
     private void Awake()
     {
-        
+        instance = this;
     }
     private void Start()
     {

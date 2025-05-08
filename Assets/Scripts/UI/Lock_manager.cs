@@ -11,6 +11,10 @@ public class Lock_manager : MonoBehaviour
     {
         instance = this;
     }
+    private void Start()
+    {
+        Unlock(false, 1, 0);
+    }
     public void Unlock(bool ischaracter, int num, int id)
     {
         Id_det[] objects = FindObjectsOfType<Id_det>(true);

@@ -11,6 +11,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] UIManager uiManager;
     [SerializeField] private DialogUI dialogUI;
     [SerializeField] private float dialogDistance;
+    [SerializeField] private LayerMask layerMask;
     private Vector2 dir;
     private RaycastHit2D hit;
     private void Update()
@@ -18,7 +19,7 @@ public class InputManager : MonoBehaviour
 
         if (EventSystem.current.IsPointerOverGameObject())
             return;
-        ;
+        
         if (Input.GetMouseButtonDown(0))
         {
            
@@ -27,14 +28,24 @@ public class InputManager : MonoBehaviour
             if(!dialogUI.isDialog)
                 playerAttack.Attack();
         }
-
+        if (dialogUI.isDialog)
+        { 
+            playerAnimationControl.SetParameter("isWalk", false);
+            return;
+        }
         UpdateDir();
         UpdatePlayerAnimation(dir);
         UpdatePlayerAttackPosition();
-        if(!dialogUI.isDialog)
+        
+        
+        
+    }
+    private void FixedUpdate()
+    {
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+        if (!dialogUI.isDialog)
             playerMove.Move();
-        
-        
     }
     private void UpdatePlayerAttackPosition()
     {
@@ -61,7 +72,7 @@ public class InputManager : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = 10;
         Vector3 screenPos = Camera.main.ScreenToWorldPoint(mousePos);
-        RaycastHit2D hit = Physics2D.Raycast(screenPos, Vector2.zero);
+        RaycastHit2D hit = Physics2D.Raycast(screenPos, Vector2.zero, layerMask);
 
         if (hit)
             if (hit.collider.GetComponent<InteractableObject>() != null && (hit.transform.position - playerMove.transform.position).magnitude <= dialogDistance)

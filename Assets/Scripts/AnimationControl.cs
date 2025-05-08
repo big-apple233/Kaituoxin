@@ -8,6 +8,7 @@ public class AnimationControl : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        
     }
     public void SetParameter(string parameterName, float value)
     {

@@ -64,6 +64,7 @@ public class DialogUI : MonoBehaviour
 
     public void Show()
     {
+        print("œ‘ æ∂‘ª∞øÚ");
         isDialog = true;
         index = 1;
         parent.SetActive(true);
