@@ -12,6 +12,7 @@ public class Chat : MonoBehaviour
     public GameObject Yes,No;
     public GameObject good, bad;
     public GameObject vid;
+    public GameObject book;
     private void Start()
     {
         print(gameObject.transform.GetChild(0).name);
@@ -21,7 +22,7 @@ public class Chat : MonoBehaviour
     private void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Mouse0)&&id<gameObject.transform.childCount)
+        if (Input.GetKeyDown(KeyCode.Mouse0)&&id<gameObject.transform.childCount&&!book.activeSelf)
         {
             Next();
         }
