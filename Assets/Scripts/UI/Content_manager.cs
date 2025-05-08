@@ -6,6 +6,7 @@ using UnityEngine;
 public class Content_manager : MonoBehaviour
 {
     public GameObject back_manager;
+    public AudioSource fanshu;
     public int len, id;
     private void Awake()
     {
@@ -41,6 +42,7 @@ public class Content_manager : MonoBehaviour
     }
     public void Union()
     {
+        fanshu.Play();
         for (int i = 0; i < len; i++)
         {
             transform.GetChild(i).gameObject.SetActive(false);
