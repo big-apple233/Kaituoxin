@@ -98,6 +98,13 @@ public class ChapterControl : MonoBehaviour
         {
             
             chapter3Person[0].SetActive(true);
+            /*for (int i = 1; i <= 6; i++)
+            {
+                Lock_manager.instance.Unlock(true, i, 7);
+                Lock_manager.instance.Unlock(true);
+                Lock_manager.instance.Unlock();
+
+            }*/
             print("ตฺศýนุ");
         }
         else

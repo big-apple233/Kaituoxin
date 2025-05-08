@@ -31,14 +31,16 @@ public class MenuUI : MonoBehaviour
     {
         if (isBusFront == false)
             StartCoroutine(BusFront());
+        
     }
     private IEnumerator BusFront()
     {
+        startButton.onClick.RemoveAllListeners();
         bus.StartBusMove(1500);
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(3f);
         twoPerson.SetActive(false);
         bus.StartBusMove(3000);
-        yield return new WaitForSeconds(4.5f);
+        yield return new WaitForSeconds(5f);
         ChangeUI();
         audio.clip = clip;
     }

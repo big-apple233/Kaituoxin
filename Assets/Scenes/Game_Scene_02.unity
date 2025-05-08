@@ -15168,7 +15168,6 @@ GameObject:
   - component: {fileID: 418401807}
   - component: {fileID: 418401806}
   - component: {fileID: 418401805}
-  - component: {fileID: 418401815}
   - component: {fileID: 418401816}
   m_Layer: 6
   m_Name: yu
@@ -15428,20 +15427,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &418401815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418401803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0976ccd346fea44fbf3ebb9a5e72f5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chara_id: 8
-  conmu_id: 1
 --- !u!114 &418401816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15454,8 +15439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae72dc708232ec6428e5ffe963741af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectId: 0
-  index: 0
+  objectId: 8
+  index: 1
 --- !u!1 &419948904
 GameObject:
   m_ObjectHideFlags: 0
@@ -49068,7 +49053,6 @@ GameObject:
   - component: {fileID: 1325610067}
   - component: {fileID: 1325610066}
   - component: {fileID: 1325610065}
-  - component: {fileID: 1325610075}
   - component: {fileID: 1325610076}
   m_Layer: 6
   m_Name: wang
@@ -49328,20 +49312,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1325610075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325610063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0976ccd346fea44fbf3ebb9a5e72f5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chara_id: 7
-  conmu_id: 1
 --- !u!114 &1325610076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49354,8 +49324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae72dc708232ec6428e5ffe963741af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectId: 0
-  index: 0
+  objectId: 7
+  index: 1
 --- !u!1 &1325817314
 GameObject:
   m_ObjectHideFlags: 0
@@ -75749,7 +75719,7 @@ SpriteRenderer:
   m_SortingLayerID: -1317719773
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2940a14633465a049b648a05e8f6aa21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36e3a28ad8755254fb31e7f98dbf4f1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82818,7 +82788,6 @@ GameObject:
   - component: {fileID: 2037548881}
   - component: {fileID: 2037548880}
   - component: {fileID: 2037548879}
-  - component: {fileID: 2037548889}
   - component: {fileID: 2037548890}
   m_Layer: 6
   m_Name: jia
@@ -83078,20 +83047,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2037548889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037548877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0976ccd346fea44fbf3ebb9a5e72f5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chara_id: 9
-  conmu_id: 1
 --- !u!114 &2037548890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83104,8 +83059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae72dc708232ec6428e5ffe963741af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectId: 0
-  index: 0
+  objectId: 9
+  index: 1
 --- !u!1 &2037955482
 GameObject:
   m_ObjectHideFlags: 0
